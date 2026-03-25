@@ -110,6 +110,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
 .timeline-role{font-size:1.05rem;font-weight:600;margin-bottom:2px}
 .timeline-org{font-size:.85rem;color:var(--text-dim);font-weight:400;margin-bottom:8px}
 .timeline-desc{font-size:.83rem;color:var(--text-dim);font-weight:300}
+.timeline-desc em{font-style:italic;color:var(--text)}
 
 /* ── Education ── */
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:900px;margin:0 auto}
@@ -170,6 +171,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -184,7 +186,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
     <p>AI/ML Specialist &amp; System Engineer with 10+ years bridging research and industry. I build production-ready machine learning solutions, NLP systems, and computer vision applications.</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">View My Work</a>
-      <a href="Mahtab_Baayen_CV.pdf" class="btn btn-outline" download>Download CV</a>
+      <a href="Mahtab_Baayen_Research_CV.pdf" class="btn btn-outline" download>Download CV</a>
     </div>
   </div>
 </section>
@@ -208,16 +210,16 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
           <div class="stat-label">Years Experience</div>
         </div>
         <div class="stat-card">
+          <div class="stat-number">7</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-card">
           <div class="stat-number">1</div>
           <div class="stat-label">Patent Held</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">2</div>
           <div class="stat-label">Master's Degrees</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">6+</div>
-          <div class="stat-label">Industries Served</div>
         </div>
       </div>
     </div>
@@ -252,32 +254,66 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
           <span class="skill-tag">R</span>
           <span class="skill-tag">C++</span>
           <span class="skill-tag">Java</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">SQL</span>
           <span class="skill-tag">TensorFlow</span>
           <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Keras</span>
           <span class="skill-tag">OpenCV</span>
           <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">NLTK</span>
+          <span class="skill-tag">Hugging Face</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">&#127760;</div>
+        <h3>Back-End &amp; APIs</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Node.js</span>
         </div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">&#9729;&#65039;</div>
-        <h3>Cloud &amp; Infrastructure</h3>
+        <h3>Cloud &amp; DevOps</h3>
         <div class="skill-tags">
           <span class="skill-tag">AWS</span>
           <span class="skill-tag">Azure</span>
           <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Git / GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">&#128451;</div>
+        <h3>Data Engineering &amp; Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Apache Spark</span>
+          <span class="skill-tag">Hadoop</span>
+          <span class="skill-tag">Airflow</span>
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">ETL Pipelines</span>
           <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Spark</span>
-          <span class="skill-tag">Git / CI/CD</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQLite</span>
         </div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">&#128300;</div>
-        <h3>Domain Knowledge</h3>
+        <h3>Domain &amp; Tools</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Data Engineering</span>
           <span class="skill-tag">Ontology Development</span>
           <span class="skill-tag">Traffic Systems</span>
           <span class="skill-tag">Pattern Recognition</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">LaTeX</span>
+          <span class="skill-tag">Linux</span>
         </div>
       </div>
     </div>
@@ -317,10 +353,58 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
           </div>
         </div>
         <div class="project-body">
-          <h3>Intelligent Transportation System</h3>
-          <p>Built and deployed real-time traffic prediction and management systems for major infrastructure projects in the Netherlands.</p>
+          <h3>Online Shockwave Detection in Traffic Video</h3>
+          <p>M.Sc. thesis research at Maastricht University. Designed and trained CNN and LSTM deep learning architectures to detect and track shockwaves (stop-and-go waves) in real-time vehicular traffic video streams. The system processes surveillance footage frame-by-frame, identifying propagating congestion patterns that are invisible to conventional loop detectors. Achieved robust performance across varying weather and lighting conditions.</p>
           <div class="project-tech">
-            <span>Python</span><span>Computer Vision</span><span>IoT</span><span>C++</span>
+            <span>CNN</span><span>LSTM</span><span>PyTorch</span><span>OpenCV</span><span>Python</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-banner">
+          <div class="project-banner-icon">&#128663;</div>
+          <div class="overlay">
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Traffic Flow Heterogeneity from Video Data</h3>
+          <p>M.Sc. internship project at Maastricht University. Built a complete computer vision pipeline to extract traffic flow heterogeneity metrics from surveillance footage. The system detects and classifies individual vehicles, tracks their trajectories across frames, and computes flow-level statistics such as headway distributions, speed variance, and lane-changing rates. These metrics provide richer input for traffic models than traditional aggregated sensor data.</p>
+          <div class="project-tech">
+            <span>OpenCV</span><span>Object Detection</span><span>Tracking</span><span>Python</span><span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-banner">
+          <div class="project-banner-icon">&#128218;</div>
+          <div class="overlay">
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Pension Regulation Knowledge Graph &amp; Semantic Search</h3>
+          <p>Consultant project at APG Pensionfonds via Conclusion Intelligence. Developed ontologies and knowledge graphs for Dutch pension regulations using NLP and LLMs. Built automated information extraction pipelines that parse complex legal documents into structured, queryable representations. Implemented a semantic search and query system that allows compliance officers to find relevant regulatory passages using natural language questions instead of keyword searches.</p>
+          <div class="project-tech">
+            <span>NLP</span><span>LLMs</span><span>Knowledge Graphs</span><span>RDF/SPARQL</span><span>Python</span><span>Hugging Face</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-banner">
+          <div class="project-banner-icon">&#128161;</div>
+          <div class="overlay">
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Green Wave Traffic Control System (Patent)</h3>
+          <p>R&amp;D project at Dynniq resulting in a granted patent (2018). Invented a novel green wave traffic control system that coordinates traffic signals along a corridor so that vehicles travelling at a target speed encounter consecutive green lights. The system dynamically adapts to real-time traffic conditions, reducing stops, fuel consumption, and emissions. Coordinated with EU-funded research projects and multi-partner consortia to develop and validate the technology.</p>
+          <div class="project-tech">
+            <span>Control Systems</span><span>Traffic Simulation</span><span>Algorithm Design</span><span>Patent</span><span>SUMO</span>
           </div>
         </div>
       </div>
@@ -333,10 +417,10 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
           </div>
         </div>
         <div class="project-body">
-          <h3>Predictive Modeling Platform</h3>
-          <p>End-to-end machine learning platform for predictive analytics, featuring automated model training and deployment pipelines.</p>
+          <h3>Multi-Scale Traffic Flow Modelling Framework</h3>
+          <p>Ph.D. research at TU Delft (2011&ndash;2016). Developed a unified framework that seamlessly couples microscopic (individual vehicle), mesoscopic (platoon-level), and macroscopic (flow-level) traffic models. The framework automatically selects the appropriate resolution for each section of a network, enabling city-scale simulations with corridor-level detail where needed. Published 7 peer-reviewed papers; nominated for Best Paper at IEEE ITSC 2013. Includes an emergency evacuation simulation of Tehran City and bicycle modelling in SUMO.</p>
           <div class="project-tech">
-            <span>scikit-learn</span><span>Docker</span><span>PostgreSQL</span><span>AWS</span>
+            <span>Traffic Modelling</span><span>Simulation</span><span>C++</span><span>Python</span><span>SUMO</span><span>LWR Model</span>
           </div>
         </div>
       </div>
@@ -350,25 +434,41 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
         </div>
         <div class="project-body">
           <h3>Computer Vision Quality Inspector</h3>
-          <p>Deep learning-based visual inspection system for manufacturing quality control, achieving 98%+ accuracy on defect detection.</p>
+          <p>Developed at Maestronic for industrial manufacturing clients. Deep learning-based visual inspection system that analyses products on a production line in real-time, detecting surface defects, dimensional deviations, and assembly errors. Integrated AI/ML models into edge computing devices (NXP i.MX series), enabling on-premise inference without cloud dependency. The system runs at production line speed with high accuracy, reducing manual inspection costs.</p>
           <div class="project-tech">
-            <span>PyTorch</span><span>OpenCV</span><span>Docker</span><span>Python</span>
+            <span>PyTorch</span><span>OpenCV</span><span>Edge AI</span><span>Docker</span><span>Python</span><span>Embedded Systems</span>
           </div>
         </div>
       </div>
 
       <div class="project-card fade-up">
         <div class="project-banner">
-          <div class="project-banner-icon">&#128218;</div>
+          <div class="project-banner-icon">&#128663;</div>
           <div class="overlay">
             <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
         <div class="project-body">
-          <h3>Ontology &amp; Knowledge Graph</h3>
-          <p>Developed domain ontologies and knowledge graphs for automated reasoning and semantic data integration across research projects.</p>
+          <h3>Adaptive Traffic Control Software</h3>
+          <p>Developed at Sweco for public-sector infrastructure clients. Designed and tested adaptive traffic control algorithms that respond to real-time traffic conditions, improving flow by 15&ndash;20% on managed corridors. Deployed intelligent transportation systems (ITS) integrating loop detectors, camera feeds, and variable message signs. Authored both commercial documentation and scientific publications on the results.</p>
           <div class="project-tech">
-            <span>RDF</span><span>SPARQL</span><span>Python</span><span>NLP</span>
+            <span>Python</span><span>C++</span><span>ITS</span><span>Adaptive Control</span><span>Simulation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-banner">
+          <div class="project-banner-icon">&#128295;</div>
+          <div class="overlay">
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Material Property Identification via Kalman Filter</h3>
+          <p>M.Sc. thesis at Ruhr University Bochum. Developed a method for identifying material properties of structures using an Extended Kalman Filter coupled with Finite Element Method simulations. The approach estimates unknown material parameters (stiffness, damping) from noisy sensor measurements by iteratively updating a state estimate. Applied to structural health monitoring scenarios where direct material testing is impractical.</p>
+          <div class="project-tech">
+            <span>Kalman Filter</span><span>FEM</span><span>Numerical Methods</span><span>C++</span><span>MATLAB</span>
           </div>
         </div>
       </div>
@@ -407,23 +507,23 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
         <div class="timeline-date">June 2025 — Present</div>
         <div class="timeline-role">System Engineer</div>
         <div class="timeline-org">Maestronic</div>
-        <div class="timeline-desc">Engineering intelligent systems and infrastructure solutions.</div>
+        <div class="timeline-desc">Design and implement embedded systems for industrial applications. Develop real-time computer vision solutions for manufacturing quality control, including YOLO-based object detection on NXP edge devices. Integrate AI/ML models into edge computing devices for automated inspection on production lines.</div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">Sep 2024 — Jun 2025</div>
-        <div class="timeline-role">AI Specialist / Data Scientist</div>
-        <div class="timeline-org">Conclusion Intelligence — Consultant for APG Pensionfonds</div>
-        <div class="timeline-desc">Developed NLP pipelines, LLM-based analytics, and machine learning solutions for pension fund operations.</div>
+        <div class="timeline-role">Data Scientist / AI Consultant</div>
+        <div class="timeline-org">Conclusion Intelligence — Consultant for APG Pensionfonds, Heerlen</div>
+        <div class="timeline-desc">Developed ontologies and knowledge graphs for Dutch pension regulations using NLP, LLMs, and other machine learning techniques. Built automated information extraction pipelines to process complex legal documents. Implemented semantic search and query systems enabling compliance officers to navigate regulations using natural language.</div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">2021 — 2024</div>
-        <div class="timeline-role">M.Sc. Research — AI Focus</div>
-        <div class="timeline-org">Maastricht University</div>
-        <div class="timeline-desc">Conducted research in artificial intelligence, focusing on machine learning and data science applications.</div>
+        <div class="timeline-role">M.Sc. Research — Artificial Intelligence</div>
+        <div class="timeline-org">Maastricht University — Department of Data Science</div>
+        <div class="timeline-desc">Thesis on online shockwave detection and tracking in vehicular traffic using deep learning (CNN/LSTM architectures). Internship on deriving traffic flow heterogeneity from video data using computer vision. Focused on machine learning, programming, and data engineering. Advisor: Dr. M. Popa.</div>
       </div>
 
       <div class="timeline-item">
@@ -431,7 +531,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
         <div class="timeline-date">2018 — 2019</div>
         <div class="timeline-role">Traffic Systems Consultant</div>
         <div class="timeline-org">Sweco</div>
-        <div class="timeline-desc">Deployed intelligent transportation systems (ITS) for major infrastructure projects.</div>
+        <div class="timeline-desc">Developed and tested adaptive traffic control software that improved flow by 15–20% on managed corridors. Deployed intelligent transportation systems (ITS) for major infrastructure projects. Authored both commercial and scientific publications on system performance.</div>
       </div>
 
       <div class="timeline-item">
@@ -439,15 +539,100 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
         <div class="timeline-date">2016 — 2018</div>
         <div class="timeline-role">R&amp;D Researcher</div>
         <div class="timeline-org">Dynniq</div>
-        <div class="timeline-desc">Coordinated EU-funded research projects and developed pattern recognition systems.</div>
+        <div class="timeline-desc">R&amp;D of intelligent transportation solutions (ITS). Invented a green wave traffic control system, resulting in a granted patent (2018). Contributed to bicycle modelling in SUMO for accurate traffic simulation. Involved in grant writing and coordinated several EU-funded research projects.</div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">2011 — 2016</div>
-        <div class="timeline-role">Ph.D. Researcher</div>
-        <div class="timeline-org">TU Delft — Traffic &amp; Transportation Department</div>
-        <div class="timeline-desc">Researched traffic modeling, simulation, and predictive analytics for transportation networks.</div>
+        <div class="timeline-role">Ph.D. Candidate</div>
+        <div class="timeline-org">TU Delft — Department of Traffic &amp; Transportation</div>
+        <div class="timeline-desc">Dissertation: <em>Multi-Scale Traffic Flow Modelling and Simulation</em>. Developed a unified multi-scale framework coupling microscopic, mesoscopic, and macroscopic traffic models. Published 7 peer-reviewed papers in IEEE ITSC, TRB, TGF, and IFORS. Best Paper nomination at IEEE ITSC 2013; Best Poster nomination at TRAIL 2012. Teaching assistant for the master's course "Traffic Flow Theory" (2011–2012). Organised biweekly PhD meetings (2013–2014). Advisors: Prof. Serge Hoogendoorn, Prof. Hans van Lint.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2008 — 2009</div>
+        <div class="timeline-role">Research Intern</div>
+        <div class="timeline-org">EUTech, Aachen, Germany</div>
+        <div class="timeline-desc">Optimized numerical algorithms for solving non-linear thermodynamic state equations. Applied computational methods from M.Sc. coursework to real-world engineering simulation problems.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Publications -->
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">Research</div>
+      <h2 class="section-title">Publications &amp; Patent</h2>
+    </div>
+    <div class="timeline fade-up">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Oct 2018 — Patent</div>
+        <div class="timeline-role">A system for controlling traffic lights and a corresponding control unit</div>
+        <div class="timeline-org">Mahtab Joueiai, Robbin Blokpoel</div>
+        <div class="timeline-desc">Granted patent for an innovative green wave traffic control system that dynamically coordinates signals along a corridor.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2016 — SUMO Conference</div>
+        <div class="timeline-role">Bicycle modelling in SUMO for accurate traffic simulation</div>
+        <div class="timeline-org">Robbin Blokpoel, Mahtab Joueiai</div>
+        <div class="timeline-desc">Extended the SUMO traffic simulator with realistic bicycle behaviour models for mixed-traffic scenarios.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Oct 2015 — TGF</div>
+        <div class="timeline-role">Discrete Phenomena-Based Multi-Scale Traffic Flow Modelling</div>
+        <div class="timeline-org">Mahtab Joueiai, Hans van Lint, Serge Hoogendoorn</div>
+        <div class="timeline-desc">Traffic and Granular Flow (TGF) 2015. Presented a discrete-event approach to coupling different traffic model scales.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2015 — TRB</div>
+        <div class="timeline-role">A Multi-Scale Traffic Flow Model Based on the Mesoscopic LWR Model</div>
+        <div class="timeline-org">Mahtab Joueiai, Ludovic Leclercq, Hans van Lint, Serge Hoogendoorn</div>
+        <div class="timeline-desc">TRB 94th Annual Meeting. Extended the classical Lighthill-Whitham-Richards model to a multi-scale setting, enabling seamless transitions between model resolutions.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jul 2014 — IFORS</div>
+        <div class="timeline-role">Scale Selection in Multi-Scale Traffic Flow Modeling</div>
+        <div class="timeline-org">Mahtab Joueiai</div>
+        <div class="timeline-desc">20th IFORS Conference. Presented a framework for automatic scale selection in multi-resolution traffic simulations.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Feb 2014 — Tehran Conference</div>
+        <div class="timeline-role">Emergency Evacuation of Tehran City: Simulation results</div>
+        <div class="timeline-org">Mahtab Joueiai, Hans van Lint, Serge Hoogendoorn, Nima Pouya</div>
+        <div class="timeline-desc">13th International Conference, Tehran. Applied multi-scale traffic simulation to model large-scale emergency evacuation scenarios for a city of 8+ million.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2014 — TRB</div>
+        <div class="timeline-role">Multi-Scale Traffic Flow Modeling In Mixed Networks</div>
+        <div class="timeline-org">Mahtab Joueiai, Hans van Lint, Serge Hoogendoorn</div>
+        <div class="timeline-desc">TRB 93rd Annual Meeting. Demonstrated multi-scale modelling in networks combining different road types and traffic conditions.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Oct 2013 — IEEE ITSC</div>
+        <div class="timeline-role">Generic solutions for consistency problems in multi-scale traffic flow models</div>
+        <div class="timeline-org">Mahtab Joueiai, Hans van Lint, Serge Hoogendoorn</div>
+        <div class="timeline-desc">16th IEEE Conference on Intelligent Transportation Systems. Nominated for Best Paper Award. Addressed fundamental consistency issues when coupling traffic models at different resolutions.</div>
       </div>
 
     </div>
@@ -464,18 +649,21 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
     <div class="edu-grid fade-up">
       <div class="edu-card">
         <div class="edu-degree">M.Sc. Artificial Intelligence</div>
-        <div class="edu-school">Maastricht University</div>
-        <div class="edu-year">Netherlands</div>
+        <div class="edu-school">Maastricht University — Dept. of Data Science</div>
+        <div class="edu-year">2021 — 2024, Netherlands</div>
+        <p style="font-size:.8rem;color:var(--text-dim);margin-top:10px;line-height:1.6"><strong style="color:var(--text)">Thesis:</strong> Online shockwave detection and tracking in vehicular traffic using deep learning<br><strong style="color:var(--text)">Internship:</strong> Deriving traffic flow heterogeneity from video data<br><strong style="color:var(--text)">Advisor:</strong> Dr. M. Popa</p>
       </div>
       <div class="edu-card">
         <div class="edu-degree">M.Sc. Computational Engineering</div>
-        <div class="edu-school">Ruhr University Bochum</div>
-        <div class="edu-year">Germany</div>
+        <div class="edu-school">Ruhr University Bochum — Dept. of Civil &amp; Mechanical Engineering</div>
+        <div class="edu-year">2006 — 2010, Germany</div>
+        <p style="font-size:.8rem;color:var(--text-dim);margin-top:10px;line-height:1.6"><strong style="color:var(--text)">Thesis:</strong> Identification of Material Properties using Extended Kalman Filter within Finite Element Method<br><strong style="color:var(--text)">Advisor:</strong> Prof. Dr.-Ing. T. Nestorovic</p>
       </div>
       <div class="edu-card">
         <div class="edu-degree">B.Sc. Water Engineering</div>
-        <div class="edu-school">University of Tehran</div>
-        <div class="edu-year">Iran</div>
+        <div class="edu-school">University of Tehran — Dept. of Irrigation &amp; Drainage Engineering</div>
+        <div class="edu-year">2002 — 2006, Iran</div>
+        <p style="font-size:.8rem;color:var(--text-dim);margin-top:10px;line-height:1.6"><strong style="color:var(--text)">Thesis:</strong> Underground Dams<br><strong style="color:var(--text)">Advisor:</strong> Prof. Habibi</p>
       </div>
     </div>
   </div>
@@ -517,7 +705,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
 
 <!-- Footer -->
 <footer class="footer">
-  <p>&copy; 2025 Mahtab Baayen. All rights reserved.</p>
+  <p>&copy; 2026 Mahtab Baayen. All rights reserved.</p>
 </footer>
 
 <script>
